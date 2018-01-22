@@ -1,0 +1,4 @@
+security.basic.enabled: true
+security.user.name: user
+security.user.password: pass
+
