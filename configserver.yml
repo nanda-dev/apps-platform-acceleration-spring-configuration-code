@@ -1,7 +1,8 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    instance-info-replication-interval-seconds: 5
-    initial-instance-info-replication-interval-seconds: 6
-
+spring:
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://${user.home}/pcflab/W2/ws-ij/assignments/apps-platform-acceleration-spring-configuration-code
